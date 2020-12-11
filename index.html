@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pier 1 Fitness</title>
+<style>
+	body, html {
+	  height: 100%;
+	}
+
+	.parallax {
+
+	  background-image: url('gymbackground.jpg');
+
+	  height: 100%; 
+
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	}
+	button {
+			  padding      : 10px;
+			  font         : bold .9em sans-serif;
+			  border       : 3px solid #333;
+			  border-radius: 10px;
+			  background   : #FFFFFF;
+			  cursor       : pointer;
+			}
+
+			button:hover,
+			button:focus {
+			  outline     : none;
+			  background  : #58ADD8;
+			  color       : #FFFFFF;
+			}
+	img {
+			  display: block;
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+	.topnav {
+			  overflow: hidden;
+			  background-color: #58ADD8;
+			}
+
+			.topnav a {
+			  float: left;
+			  display: block;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 17px;
+			}
+
+			.topnav a:hover {
+			  background-color: #ddd;
+			  color: black;
+			}
+
+			.topnav a.active {
+			  background-color: #707070;
+			  color: white;
+			}
+
+			.topnav .icon {
+			  display: none;
+			}
+
+			@media screen and (max-width: 600px) {
+			  .topnav a:not(:first-child) {display: none;}
+			  .topnav a.icon {
+				float: right;
+				display: block;
+			  }
+			}
+
+			@media screen and (max-width: 600px) {
+			  .topnav.responsive {position: relative;}
+			  .topnav.responsive .icon {
+				position: absolute;
+				right: 0;
+				top: 0;
+			  }
+			  .topnav.responsive a {
+				float: none;
+				display: block;
+				text-align: left;
+			  }
+			}
+</style>
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+		  <a href="index.html" class="active">Home</a>
+		  <a href="membership.html">Membership</a>
+		  <a href="gymform.html">JOIN NOW</a>
+		  <a href="contact.html">Contact Us</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+	</div>
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+		x.className += " responsive";
+	  } else {
+		x.className = "topnav";
+	  }
+	}
+	</script>
+
+	<div class="parallax"></div>
+
+	<div style="height:800px ; background-color:#638495 ; font-family:Verdana ; color:white ; text-align:center">
+		<br>
+		<h1>RISE TO THE OCCASION</h1>
+		<p style = "font-size:18px">Become a member of Pier 1 Fitness and join a community of like-minded fitness enthusiasts and athletes.</p> 
+		<p style = "font-size:18px">Start from scratch or take your fitness to the next level.</p>
+		<a href="membership.html" style="float:center" target="blank"><button>Membership Options</button></a>
+		<br>
+		<p>
+		<table style="border:1px solid white;margin-left:auto;margin-right:auto;">
+			<tr bgcolor = "white">
+				<td>
+				<img src="sparoom.jpg" alt="Picture of Techno Gym" width = "600" height = "400">
+				</td>
+				<td>
+				<img src="running.jpg" alt="Picture of People using gym" width = "600" height = "400">
+				</td>
+				<td>
+				<img src="yoga.jpg" alt="Picture of Yoga Room" width = "600" height = "400">
+				</td>
+			</tr>
+		</table>
+		
+		<p> JOIN NOW and get January FREE, Zero Initiation Fee + Early Access to all of our classes and equipment.</p>
+		<div class="button">
+		<a href="gymform.html" style="float:center" target="blank"><button>JOIN NOW</button></a>
+		</div>
+	</div>
+
+	<div class="parallax"></div>
+	
+	<div style="height:1550px ; background-color:#638495 ; font-family:Verdana ; color:white ; text-align:center">
+		<br>
+		<img src="logo.jpg" alt="Picture of Logo" width = "400" height = "200">
+		<h2 style = "font-size:18px">We offer a wide range of classes and personalized private traning specialist.</h2> 
+		<br>
+		<table style="border:1px solid white;margin-left:auto;margin-right:auto">
+			<tr bgcolor = "#638495">
+				<td style = "color:white">
+				<img src="personaltrain.jpg" alt="Picture of Group Training" width = "600" height = "400">
+				</td>
+				<td>
+				Personal Training<br>
+				<p>Personal Training Coaches in the industry right at your fingertips.</p> 
+				<p>Memberships: One complimentary session with a coach in Personal Training.</p>
+				</td>
+			</tr>
+			<tr bgcolor = "#638495">
+				<td style = "color:white">
+				Group Fitness<br>
+				<p>Unlimited Group Fitness Classes included in your membership.</p>
+				<p>Yoga, Barre, HIIT + Strength, Cycling, + so much more.</p>
+				</td>
+				<td>
+				<img src="grouptraining.jpg" alt="Picture of Group Training" width = "600" height = "400">
+				</td>
+			</tr>
+			<tr bgcolor = "#638495">
+				<td style = "color:white">
+				<img src="luxury.jpg" alt="Picture of Group Training" width = "600" height = "400">
+				</td>
+				<td>
+				Luxurious Amenities
+				<br>
+				<p>Luxury locker rooms, communal work + social spaces, and massage services.</p>
+				<p>Our clubs will quickly become much more to you than your gym.</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="parallax"></div>
+
+</body>
+</html>
